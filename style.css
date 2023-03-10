@@ -1,0 +1,27 @@
+body{
+    background-color: #f3f1f0;
+}
+h1{
+    text-align: center;
+}
+.accordion-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 31.25em;
+    width: 100%;
+}
+.item-img{
+    margin-top: 15px;
+}
+.item-img, img{
+    max-width: 30em;
+    width: 100%;
+    text-align: center;
+}
