@@ -1,0 +1,103 @@
+body{
+  background-color: #f3f1f0;
+}
+h1{
+  text-align: center;
+}
+.accordion{
+  max-width: 32em;
+  width: 100%;
+  margin: 0 auto;
+  color: #a83b08;
+}
+.accordion:hover span{
+  color: #000;
+}
+.fa{
+  visibility: hidden;
+}
+.accordion:hover .fa{
+  visibility: visible;
+  transition: 1s;
+  color: #000;
+}
+.accordion:hover input[type="radio"]:checked + label .title span{
+  background-color: #ec5c1a;
+  color: #fff;
+}
+.title{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625em;
+  border: 0.063em solid #ec5c1a;
+  margin-top: -0.625em;
+}
+.title:hover span, .title:hover .fa{
+  color: #ec5c1a;
+}
+.title:hover .fa{
+  transition: 0.5s;
+}
+img{
+  width: 100%;
+  text-align: center;
+  padding-top: 0.813em;
+}
+input[type="radio"]{
+  visibility: hidden;
+  height: 0;
+}
+.accordion-item .image{
+  visibility: hidden;
+  height: 0;
+}
+input[type="radio"]:checked + label .image{
+  visibility: visible;
+  height: auto;
+}
+input[type="radio"]:checked + label .title .fa{
+  transform: rotate(180deg);
+  color: #fff;
+}
+input[type="radio"]:checked + label .title{
+  background-color: #ec5c1a;
+  color: #fff;
+}
+.accordion-item:active .image{
+  opacity: 0.5;
+}
+.accordion-item:active input[type="radio"]:checked + label .title, .accordion-item:active .title{
+  background-color: green;
+  border: 0.063em solid #c2910c3f;
+}
+.accordion-item:active input[type="radio"]:checked + label .title span, .accordion-item:active .title span{
+  background-color: green;
+  color: #9ff765;
+}
+.accordion-item:active input[type="radio"]:checked + label .fa, .accordion-item:active .title .fa{
+  color: #9ff765;
+  transition: 0s;
+}
+input[type="radio"]:checked + label .title:hover, .accordion:hover input[type="radio"]:checked + label .title:hover span{
+  background-color: #bb4a16;
+  color: #fff;
+}
+.accordion-item:hover span{
+  color: #ec5c1a;
+}
+.accordion-item:hover .fa{
+  color: #ec5c1a;
+  transform: rotate(180deg);
+}
+.accordion-item:hover .image{
+  cursor: pointer;
+  visibility: visible;
+  height: auto;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+
