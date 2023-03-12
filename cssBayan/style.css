@@ -94,15 +94,7 @@ input[type="radio"]:checked + label span{
 .accordion-item:active input[type="radio"]:not(:checked) + label .fa{
   color: #6ab1c1;
 }
-@media not all and (pointer: coarse){
-  span{
-    font-size: 1em;
-  }
-  .fa{
-    visibility: visible;
-    height: auto;
-  }
-}
+
 @media screen and (min-width: 320px){
   h1{
     font-size: 1.4em;
@@ -119,5 +111,12 @@ input[type="radio"]:checked + label span{
   span{
     max-width: 30em;
     font-size: 1.2em;
+  }
+}
+
+@media (hover: none){
+  .fa{
+    visibility: visible;
+    height: auto;
   }
 }
