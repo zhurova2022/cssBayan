@@ -94,7 +94,7 @@ input[type="radio"]:checked + label span{
 .accordion-item:active input[type="radio"]:not(:checked) + label .fa{
   color: #6ab1c1;
 }
-@media (hover:none) and (pointer: coarse){
+@media not all and (pointer: coarse){
   span{
     font-size: 1em;
   }
