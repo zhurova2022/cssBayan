@@ -3,6 +3,7 @@
 }
 body{
   background-color: #f3f1f0;
+  height: 70em;
 }
 .accordion{
   max-width: 40em;
@@ -64,8 +65,8 @@ input[type="radio"]{
 input[type="radio"]:checked + label img{
   visibility: visible;
   height: auto;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-name: appearance;
           animation-name: appearance;
 }
@@ -80,8 +81,8 @@ input[type="radio"]:checked + label span{
 .accordion-item:hover input[type="radio"]:not(:checked) + label img{
   visibility: visible;
   height: auto;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-name: appearance;
           animation-name: appearance;
 }
@@ -129,6 +130,9 @@ input[type="radio"]:checked + label span{
 }
 
 @media (hover: hover) and (pointer: coarse){
+  body{
+    height: auto;
+  }
   .fa{
     visibility: visible;
     height: auto;
