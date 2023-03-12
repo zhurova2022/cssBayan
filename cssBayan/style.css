@@ -14,7 +14,7 @@ body{
   color: #000;
 }
 .accordion-item{
-  margin-top: 0.625em;
+  margin-top: 1em;
 }
 h1{
   text-align: center;
@@ -40,8 +40,9 @@ span{
 }
 img{
   padding-top: 0.625em;
-  width: 100%;
+  width: 80%;
   display: block;
+  margin: 0 auto;
 }
 input[type="radio"]{
   visibility: hidden;
@@ -63,7 +64,10 @@ input[type="radio"]{
 input[type="radio"]:checked + label img{
   visibility: visible;
   height: auto;
-  transition: all 2s ease-in-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: appearance;
+          animation-name: appearance;
 }
 input[type="radio"]:checked + label .fa,
 .accordion-item:hover input[type="radio"]:not(:checked) + label .fa{
@@ -73,10 +77,17 @@ input[type="radio"]:checked + label .fa,
 input[type="radio"]:checked + label span{
   color: #3aab43;
 }
-.accordion-item:hover img{
+.accordion-item:hover input[type="radio"]:not(:checked) + label img{
   visibility: visible;
   height: auto;
-  transition: all 2s ease-in-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: appearance;
+          animation-name: appearance;
+}
+@-webkit-keyframes appearance{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 .accordion-item:hover span{
   color: #3aab43;
@@ -112,14 +123,14 @@ input[type="radio"]:checked + label span{
     max-width: 30em;
     font-size: 1.2em;
   }
+  .accordion-item{
+    margin-top: 0.625em;
+  }
 }
 
-@media (hover: none) and (pointer: coarse){
+@media (hover: hover) and (pointer: coarse){
   .fa{
     visibility: visible;
     height: auto;
-  }
-  h1{
-    color: rgb(0, 255, 64);
   }
 }
