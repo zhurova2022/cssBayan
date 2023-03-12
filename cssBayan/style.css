@@ -114,9 +114,12 @@ input[type="radio"]:checked + label span{
   }
 }
 
-@media (pointer: coarse){
+@media (hover: none) and (pointer: coarse){
   .fa{
     visibility: visible;
     height: auto;
+  }
+  h1{
+    color: red;
   }
 }
