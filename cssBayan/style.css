@@ -36,6 +36,7 @@ span{
 }
 .fa{
   margin-left: auto;
+  visibility: hidden;
 }
 img{
   padding-top: 0.625em;
@@ -113,16 +114,12 @@ input[type="radio"]:checked + label span{
   }
 }
 
-@media (hover: none){
+@media (hover: hover) and (pointer: coarse){
   .fa{
     visibility: visible;
     height: auto;
   }
-}
-
-@media (hover: hover){
-  .fa{
-    visibility: hidden;
-    height: auto;
+  h1{
+    color: rgb(68, 0, 255);
   }
 }
