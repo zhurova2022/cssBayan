@@ -138,3 +138,12 @@ input[type="radio"]:checked + label span{
     height: auto;
   }
 }
+@media (hover: none){
+  body{
+    height: auto;
+  }
+  .fa{
+    visibility: visible;
+    height: auto;
+  }
+}
