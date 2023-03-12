@@ -129,7 +129,7 @@ input[type="radio"]:checked + label span{
   }
 }
 
-@media (hover: hover) and (pointer: coarse){
+@media (hover: hover){
   body{
     height: auto;
   }
